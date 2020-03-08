@@ -16,8 +16,11 @@ sudo npm install -g jest
 Test Setup:
 
 cd exercises
+
 run all the test for all the exercises every single time
+
 jest
 
 running one set of tests
+
 jest directoyName/test.js --watch
