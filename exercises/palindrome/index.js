@@ -7,6 +7,28 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+// https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/every
+// ANOTHE SOLUTION: this is not a ideal solution, we are doing more comparisons that are necesary
+function palindrome(str) {
+  return str.split("").every((char, i) => {
+    return char === str[str.length - i - 1];
+  });
+}
 
 module.exports = palindrome;
+
+// FIRTS SOLUTION
+// function palindrome(str) {
+//   return (
+//     str ===
+//     str
+//       .split("")
+//       .reverse()
+//       .join("")
+//   );
+// }
+
+// SECOND SOLUTION:
+// function palindrome(str) {
+//   return str === str.split("").reduce((rev, char) => char + rev, "");
+// }
