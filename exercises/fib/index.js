@@ -8,6 +8,28 @@
 // Example:
 //   fib(4) === 3
 
-function fib(n) {}
+function fib(n) {
+  const result = [0, 1];
+
+  for (let i = 2; i <= n; i++) {
+    const a = result[i - 1];
+    const b = result[i - 2];
+    result.push(a + b);
+  }
+  return result[n];
+}
 
 module.exports = fib;
+
+// For every increase in n we have to calculate one additional number.
+// This is a linear runtime algorith
+// function fib(n) {
+//   const result = [0, 1];
+//
+//   for (let i = 2; i <= n; i++) {
+//     const a = result[i - 1];
+//     const b = result[i - 2];
+//     result.push(a + b);
+//   }
+//   return result[n];
+// }
