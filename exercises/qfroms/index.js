@@ -12,6 +12,8 @@
 //     q.remove(); // returns 1
 //     q.remove(); // returns 2
 
+// In the real world, this is not an efficient implementation. It is an
+// exercise proposed in interviews
 const Stack = require("./stack");
 
 class Queue {
