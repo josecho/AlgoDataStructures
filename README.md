@@ -49,6 +49,13 @@ debug> repl
 debug> str (show str variable value)
 debug> str.split("").reduce((rev, char) => char + rev, "");  (evaluate expression)
 
-For each iteration into a loop, execute CONTROL+C , c COMMAND and repl.
+For each iteration into a loop, execute Control + C , c COMMAND and repl.
 
+- Summary:
 
+Add a 'debugger' statement in your fucntion
+Call the function manually
+At the terminal, run 'node inspect index.js'
+To continue execution on the file, press 'c' then 'enter'
+To launch a 'repl' session, type 'repl' then 'enter'
+To exit the 'repl', press Control + C
