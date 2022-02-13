@@ -22,8 +22,15 @@ module.exports = reverse;
 // Never Use Array.from() to Convert Strings to Arrays
 // Splitting a string into an array is about 70 times faster with 'a string'.split('') 
 // than Array.from('a string')
+
 // function reverse(str) {
 //   return Array.from(str).reverse().join('');
+// }
+
+// function reverse(str) {
+//   return Array.from(str).reduceRight( (prev, current) => { 
+//    return prev + current;
+//  });
 // }
 
 // function reverse(str) {
