@@ -49,4 +49,6 @@ debug> repl
 debug> str (show str variable value)
 debug> str.split("").reduce((rev, char) => char + rev, "");  (evaluate expression)
 
+For each iteration into a loop, execute CONTROL+C , c COMMAND and repl.
+
 
