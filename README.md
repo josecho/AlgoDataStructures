@@ -1,6 +1,7 @@
-# AlgoDataStructures
+# The Coding Interview Bootcamp: Algorithms + Data Structures
 
-Estructura de datos e algoritmos
+The Coding Interview Bootcamp: Algorithms + Data Structures
+
 
 Use Javascript to solve challenging algorithms
 
