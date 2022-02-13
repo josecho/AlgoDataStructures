@@ -26,3 +26,27 @@ jest
 (running one set of tests)
 
 jest directoyName/test.js --watch
+
+# Debugger Statements
+
+Write "debugger" in some point in code;
+
+function reverse(str) {
+  debugger;
+  return str.split("").reduce((rev, char) => char + rev, "");
+}
+
+Execute function in code before export statement:
+reverse('asdf');
+
+
+cd exercices\reversestring
+
+node inspect index.js
+
+debug> c (in order to advance line, it is posible write continue)
+debug> repl
+debug> str (show str variable value)
+debug> str.split("").reduce((rev, char) => char + rev, "");  (evaluate expression)
+
+
