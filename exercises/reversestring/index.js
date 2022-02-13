@@ -20,6 +20,10 @@ module.exports = reverse;
 // }
 
 // function reverse(str) {
+//   return Array.from(str).reverse().join('');
+// }
+
+// function reverse(str) {
 //   let reversed = "";
 //
 //   for (let character of str) {
